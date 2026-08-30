@@ -1,16 +1,16 @@
 ```mermaid
-flowchart TD
+flowchart LR
   subgraph SYS["AI-BASED SMART AGRICULTURE — SYSTEM ARCHITECTURE"]
-    direction TB
+    direction LR
 
-    A["1. Data Sources & Datasets<br/>Farmer, Weather, Historical, Govt"]
-    B["2. Ingestion & Preprocessing<br/>Collect · Validate · Clean · Normalize"]
-    C["3. Database & Storage<br/>Agricultural DB · Cloud Storage"]
-    D["4. Model Training<br/>Train · Evaluate · Finalize"]
-    E["5. AI / ML Models<br/>Disease · Weather · Yield · Chatbot"]
-    F["6. Backend Services<br/>APIs · Auth · Prediction · Notify"]
-    G["7. Frontend / UI<br/>Mobile · Web · Dashboard · Chatbot"]
-    H["8. Users<br/>Farmers · Experts · Admin"]
+    A["1. Data Sources<br/>& Datasets"]
+    B["2. Ingestion &<br/>Preprocessing"]
+    C["3. Database<br/>& Storage"]
+    D["4. Model<br/>Training"]
+    E["5. AI / ML<br/>Models"]
+    F["6. Backend<br/>Services"]
+    G["7. Frontend<br/>/ UI"]
+    H["8. Users"]
 
     A --> B --> C --> D --> E --> F
     F <--> G

@@ -1,15 +1,15 @@
 ```mermaid
 flowchart LR
-  subgraph ARCH["AI-BASED SMART AGRICULTURE — SYSTEM ARCHITECTURE"]
+  subgraph ARCH[" "]
     direction LR
 
-    A["Data Sources<br/>Online Datasets & APIs"]
-    B["Data Processing<br/>Cleaning & Preparation"]
-    C["Model Training<br/>AI / ML Models"]
-    D["Backend<br/>+ Model Integration"]
-    E["Database<br/>Stores Predictions & Data"]
-    F["Frontend<br/>User Interface"]
-    G["Users<br/>Farmers · Experts · Admin"]
+    A["(1) Data Acquisition<br/>Online Datasets & APIs"]
+    B["(2) Data Preprocessing<br/>Cleaning & Preparation"]
+    C["(3) Model Training<br/>AI / ML Models"]
+    D["(4) Backend Layer<br/>Model Integration"]
+    E["(5) Database<br/>Persistent Storage"]
+    F["(6) Frontend Layer<br/>User Interface"]
+    G["(7) End Users<br/>Farmers · Experts · Admin"]
 
     A --> B --> C --> D
     D <--> E
@@ -17,14 +17,13 @@ flowchart LR
     F --> G
   end
 
-  classDef stage fill:#0B5C7A,color:#fff,stroke:#083F51,stroke-width:1px,rx:4,ry:4;
-  classDef core fill:#2C5F2D,color:#fff,stroke:#1F4620,stroke-width:1px,rx:4,ry:4;
-  classDef user fill:#3A4750,color:#fff,stroke:#22292E,stroke-width:1px,rx:4,ry:4;
-  classDef container fill:#F7FAFA,stroke:#0B5C7A,stroke-width:1.5px;
+  classDef stage fill:#EAF1F5,color:#111827,stroke:#37474F,stroke-width:1px,rx:2,ry:2;
+  classDef core fill:#DCE7DC,color:#111827,stroke:#37474F,stroke-width:1px,rx:2,ry:2;
+  classDef user fill:#E5E7EB,color:#111827,stroke:#37474F,stroke-width:1px,rx:2,ry:2;
 
   class A,B,C stage;
   class D,E core;
-  class F user;
-  class G user;
-  class ARCH container;
+  class F,G user;
 ```
+
+**Fig. 1.** Proposed system architecture. Raw agricultural data is acquired from online datasets and APIs (1), preprocessed (2), and used to train the AI/ML models (3). The backend layer (4) integrates the trained models and maintains bidirectional communication with the database (5) for persistent storage and the frontend layer (6), which serves the end users (7).
